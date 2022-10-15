@@ -15,22 +15,22 @@ public class TaskController {
         return new ArrayList<>();
     }
 
-
+    @GetMapping
     private TaskDto getTask(Long taskId) {
         return new TaskDto(1L, "test title", "test_content");
     }
 
-
+    @DeleteMapping
     private void deleteTask(Long taskId) {
 
     }
 
-
+    @PutMapping
     private TaskDto updateTask(TaskDto task) {
         return new TaskDto(1L, "Edited test title", "Test content");
     }
 
-
+    @PostMapping
     private void createTask(TaskDto task) {
 
     }
